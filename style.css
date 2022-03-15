@@ -1,0 +1,369 @@
+/*CODE BY SAMO*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+:root{
+    --bg-uno: url(././bg3.jpg);
+    --bg-dos: url(././bg3.jpg);
+    --bg-tres: url(././bgsyadsa.jpg);
+  
+}
+body{
+    margin: 0;
+    font-family: 'lato', sans-serif;    
+}
+nav{
+    z-index: 99;
+    position: relative;
+    transition: 0.4;
+}
+nav a{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+nav .container{
+   max-width: 1150px;
+    padding: 1em 2em;
+    margin: 0 auto;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 0.5em;
+}
+nav ul a{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+nav .container .menu-btn{
+    display: none;
+}
+.social-media a{
+    font-size: 1em;
+}
+header{
+    height: 100vh;
+    background: var(--bg-uno);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+header h1{
+    position: absolute;
+    font-size: clamp(3.5rem, 15vw + 1rem, 12rem);
+    letter-spacing: 5px;
+    font-weight: 700;
+    transform: translateY(-50%);
+}
+.glass{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   animation: glassPanel 0.8s ease-in forwards;
+}
+.glassServicios{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   animation: glassPanelServicios 0.8s ease-in forwards;
+}
+.glassServicios h1{
+    color: white;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.down{
+    display: inline-flex;
+   justify-content: right;
+   margin: 1.5rem 5rem;
+}
+.downIcon{
+    width: 20px;
+}
+
+.h-glass{
+    background: var(--bg-uno);
+    background-position: 14% 44%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.2);
+    top: 45vh;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    animation: text1 0.8s ease-in forwards;
+    animation-delay: 500ms;
+
+}
+.h-regular{
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-text-stroke: 0px rgba(255, 255, 255, 0.7);
+    top: 45vh;
+    left: 46%;
+    margin: 0;
+    opacity: 0;
+    animation: text2 0.8s ease-in forwards;
+    animation-delay: 500ms;
+    
+}
+.nav-links{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    animation: navLinks 0.8s ease-in forwards; 
+}
+.nav-links > li a{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding:5px;
+    border: none;
+    font-family: 'Jura', sans-serif;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 200px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0px 0px 0px 200px rgba(255, 255, 255, 0);
+    transition: box-shadow .1s;
+    -webkit-transition: box-shadow .1s;
+}
+.nav-links > li a:hover{
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+.glass > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 60vh;
+    margin: 0;
+    padding: 0;
+    animation: textIntro 3s ease-in-out;
+}
+
+.glass p{
+    color: #000000;
+    text-align: justify;
+    font-family: 'Jura', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    initial-letter: 10px 10px;
+    margin: 0;
+    padding: 0 2em;
+    
+}
+.glass h4{
+    color: #000000;
+    text-align: end;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin: 0;
+    padding: 1em;
+}
+
+section{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0px solid red;
+    background: #000000;  /* fallback for old browsers */
+    
+}
+
+
+@keyframes text1 {
+    0%{
+        opacity: 0;
+        transform: translate(-2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+        transform: translate(2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+@keyframes navLinks {
+    0%{
+        opacity: .5;
+        transform: translateY(-6em)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes glassPanel {
+    0%{
+        opacity: 1;
+        transform: translateX(-50em)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes glassPanelServicios {
+    0%{
+        opacity: 1;
+        transform: translateY(50em)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes textIntro {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 900px){
+    nav .container{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    nav .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 0;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    .nav-links li{
+        display: block;
+        margin: 0.5em 0;
+    }
+    .social-media li:nth-child(1){
+        margin-left: 0;
+    }
+    .social-media{
+        order: 2;
+    }
+    .nav-links{
+        order: 1;
+        padding-top: 1em;
+    }
+    nav .container .menu-btn{
+        display: inline-block;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+    nav .container .nav-toggle{
+        height: 15em;
+    }
+    .nav-background{
+        background: #fff;
+    }
+}
+/*
+@media screen and (max-width: 750px) {
+    .glass{
+        width: 90%;
+        height: initial;
+        min-height: 30em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    .h-glass{
+        right: 52%;
+        top: 10%;
+        color: #1f1f1f;
+        background-attachment: initial;
+        background-size: 100% 130%;
+    }
+    .h-regular{
+        top: 30%;
+    }
+    nav .container .menu-btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .glass > div{
+        margin-top: 4em;
+    }
+}
+@media screen and (max-height: 700px) {
+    header{
+        height: 700px;
+    }
+}
+@media screen and (max-width: 500px){
+    .glass > div div:nth-child(1){
+        display: none;
+    }
+}*/
