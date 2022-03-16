@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 :root{
-    --bg-uno: url(././bg3.jpg);
-    --bg-dos: url(././bg3.jpg);
-    --bg-tres: url(././bgsyadsa.jpg);
+    --bg-uno: url(././bg2.jpg);
+    --bg-dos: url(././bg2.jpg);
+    --bg-tres: url(././bg3.jpg);
+    --bg-cuatro: url(././bg4.jpg);
+    --bg-cinco: url(././bg5.jpg);
+    --bg-seis: url(././bg6.jpg);
+    --bg-siete: url(././bg7.jpg);
+    --bg-ocho: url(././bg8.jpeg);
   
 }
 body{
