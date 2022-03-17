@@ -15,10 +15,10 @@ document.querySelector('#glassPanel').innerHTML = `
         <div> 
             <h4>SOPORTE Y ASISTENCIA DIGITAL S.A</h4>
             <p>
-                Acompañamos a nuestros clientes en su transformación digital ofreciendo servicios, 
-                productos y soluciones de gestión documental que adaptamos a las necesidades de cada organizacion, 
-                brindando un servicio integral centralizado y óptimo de custodia, 
-                para acelerar la transformación digital y permitirles maximizar el valor de su información.
+                Acompañamos a nuestros clientes en su transformación digital ofreciendo servicios
+                y soluciones de gestión documental que adaptamos a las necesidades de cada organizacion,
+                brindando un servicio centralizado y óptimo, para acelerar la transformación digital y 
+                permitirles maximizar el valor de su información.
             </p>
         </div>
 </div>
@@ -44,10 +44,10 @@ BtnInicio.addEventListener('click', () => {
         <div> 
             <h4>SOPORTE Y ASISTENCIA DIGITAL S.A</h4>
             <p>
-                Acompañamos a nuestros clientes en su transformación digital ofreciendo servicios, 
-                productos y soluciones de gestión documental que adaptamos a las necesidades de cada organizacion, 
-                brindando un servicio integral centralizado y óptimo de custodia, 
-                para acelerar la transformación digital y permitirles maximizar el valor de su información.
+                Acompañamos a nuestros clientes en su transformación digital ofreciendo servicios
+                y soluciones de gestión documental que adaptamos a las necesidades de cada organizacion,
+                brindando un servicio centralizado y óptimo, para acelerar la transformación digital y 
+                permitirles maximizar el valor de su información.
             </p>
         </div>
     </div>

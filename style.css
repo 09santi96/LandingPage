@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 :root{
-    --bg-uno: url(././bg2.jpg);
+    --bg-uno: url(././bg3.jpg);
     --bg-dos: url(././bg2.jpg);
     --bg-tres: url(././bg3.jpg);
     --bg-cuatro: url(././bg4.jpg);
@@ -131,7 +131,7 @@ header h1{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.2);
+    -webkit-text-stroke: 5px rgba(0, 0, 0, 0.2);
     top: 45vh;
     right: 0;
     margin: 0;
@@ -142,7 +142,7 @@ header h1{
 }
 .h-regular{
     color: rgba(255, 255, 255, 0.8);
-    -webkit-text-stroke: 0px rgba(255, 255, 255, 0.7);
+    -webkit-text-stroke: 5px rgba(0, 0, 0, 0.2);
     top: 45vh;
     left: 46%;
     margin: 0;
