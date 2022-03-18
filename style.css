@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 :root{
-    --bg-uno: url(././bg3.jpg);
+    --bg-uno: url(././bg2.jpg);
     --bg-dos: url(././bg2.jpg);
     --bg-tres: url(././bg3.jpg);
     --bg-cuatro: url(././bg4.jpg);
@@ -86,30 +86,6 @@ header h1{
     justify-content: center;
     align-items: flex-end;
    animation: glassPanel 0.8s ease-in forwards;
-}
-.glassServicios{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-   animation: glassPanelServicios 0.8s ease-in forwards;
-}
-.glassServicios h1{
-    color: white;
-    font-size: 1em;
-    padding: 0;
-    margin: 0;
 }
 
 .down{
@@ -212,16 +188,6 @@ header h1{
     padding: 1em;
 }
 
-section{
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    border: 0px solid red;
-    background: #000000;  /* fallback for old browsers */
-    
-}
 
 
 @keyframes text1 {
@@ -264,6 +230,43 @@ section{
         transform: translateX(0);
     }
 }
+/*------------------------------Servicios-------------------------------*/
+.glassServicios{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: glassPanelServicios 0.8s ease-in forwards;
+}
+.glassServicios p{
+    color: white;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+.titleServicios{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerCardsServicios{
+    border: 1px solid rgb(0, 255, 255);
+    width: 80%;
+    height: 30%;
+
+}
+.containerCardsServicios .cardServicios{
+    border: 1px solid rgb(251, 255, 0);
+}
 
 @keyframes glassPanelServicios {
     0%{
@@ -292,6 +295,9 @@ section{
         opacity: 1;
     }
 }
+
+
+/*
 @media screen and (max-width: 900px){
     nav .container{
         display: flex;

@@ -59,10 +59,12 @@ BtnInicio.addEventListener('click', () => {
 BtnServicios.addEventListener('click', () => {
     GlassPanel.innerHTML = `
     <div class="glassServicios">
-        <h1>SOPORTE Y ASISTENCIA DIGITAL S.A</h1>
-        <h4>SERVICIOS</h4>
-              
-           
+        <div>
+            <h1>SOPORTE Y ASISTENCIA DIGITAL S.A</h1>
+            <h4>SERVICIOS</h4>
+            
+
+        </div> 
     </div>
     `;
 });
