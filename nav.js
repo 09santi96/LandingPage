@@ -42,7 +42,7 @@ BtnInicio.addEventListener('click', () => {
     <div class="glass">
     <h1 class="h-glass">SYAD</h1>
         <div> 
-            <h4>SOPORTE Y ASISTENCIA DIGITAL S.A</h4>
+            <h1>SOPORTE Y ASISTENCIA DIGITAL S.A</h1>
             <p>
                 Acompañamos a nuestros clientes en su transformación digital ofreciendo servicios
                 y soluciones de gestión documental que adaptamos a las necesidades de cada organizacion,
